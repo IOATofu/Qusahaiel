@@ -6,7 +6,7 @@ defaults:
 
 on:
   push:
-    branches: [deployment]
+    branches: [develop]
 
 jobs:
   build:
@@ -29,10 +29,10 @@ jobs:
       - name: Build
         uses: docker/build-push-action@v3
         with:
-          context: ./backend/positioning
-          file: ./backend/positioning/Dockerfile
+          context: ./front
+          file: ./front/Dockerfile
           platforms: linux/amd64
           push: true
-          tags: ghcr.io/IOATofu/qusahaiel-front:${{ env.IMAGE_TAG }}
+          tags: ghcr.io/ioatofu/qusahaiel-front:${{ env.IMAGE_TAG }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
