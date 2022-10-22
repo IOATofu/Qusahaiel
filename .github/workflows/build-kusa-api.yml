@@ -1,4 +1,4 @@
-name: Deploy Front
+name: Deploy Kusa-API
 
 defaults:
   run:
