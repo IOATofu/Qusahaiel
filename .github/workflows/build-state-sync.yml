@@ -33,6 +33,6 @@ jobs:
           file: ./state-sync/Dockerfile
           platforms: linux/amd64
           push: true
-          tags: ghcr.io/ioatofu/qusahaiel-front:${{ env.IMAGE_TAG }}
+          tags: ghcr.io/ioatofu/qusahaiel-state-sync:${{ env.IMAGE_TAG }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
