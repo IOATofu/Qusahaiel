@@ -29,8 +29,8 @@ jobs:
       - name: Build
         uses: docker/build-push-action@v3
         with:
-          context: ./backend/positioning
-          file: ./backend/positioning/Dockerfile
+          context: ./front
+          file: ./front/Dockerfile
           platforms: linux/amd64
           push: true
           tags: ghcr.io/ioatofu/qusahaiel-front:${{ env.IMAGE_TAG }}
