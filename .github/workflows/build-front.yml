@@ -6,7 +6,7 @@ defaults:
 
 on:
   push:
-    branches: [deployment]
+    branches: [develop]
 
 jobs:
   build:
